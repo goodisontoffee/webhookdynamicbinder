@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "d4a72dd8-3338-46db-aa72-2ffb0cf63ccb",
+		"name": "Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:62590/api/webhook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t'Name': 'Jon Smith',\n\t'Address':\n\t{\n\t\t'City': 'New York',\n\t\t'State': 'NY'\n\t},\n\t'Age': 42\n}"
+				},
+				"url": {
+					"raw": "http://localhost:62590/api/webhook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "62590",
+					"path": [
+						"api",
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
